@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: your-dockerhub-username/nodejs-demo-app
+  IMAGE_NAME: deepakjaiswal09/nodejs-demo-app
 
 jobs:
   build-and-push:
