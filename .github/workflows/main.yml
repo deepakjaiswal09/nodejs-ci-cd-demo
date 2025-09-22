@@ -44,6 +44,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
+          context: .          # 👈 use local checkout instead of re-cloning
+          file: ./Dockerfile  # 👈 explicitly point to Dockerfile
           push: true
           tags: |
             ${{ env.IMAGE_NAME }}:latest
